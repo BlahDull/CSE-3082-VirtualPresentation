@@ -7,226 +7,237 @@
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">CSE-3082 Virtual Presentation</a>
                 <ul class="nav-links">
                     <li><a href="#" class="nav-link active">Home</a></li>
-                    <li><a href="#intro" class="nav-link">Introduction</a></li>
-                    <li><a href="#analysis" class="nav-link">Analysis</a></li>
-                    <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+                    <li><a href="#issue" class="nav-link">Ethical Issue</a></li>
+                    <li><a href="#solution" class="nav-link">Solutions</a></li>
+                    <li><a href="#objections" class="nav-link">Objections</a></li>
+                    <li><a href="#responses" class="nav-link">Responses</a></li>
+                    <!-- <li><a href="#defense" class="nav-link">Defense</a></li> -->
+                    <!-- <li><a href="#conclusion" class="nav-link">Conclusion</a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-subtitle">Cutting-edge insights</div>
                 <h1>The Use Of Generative AI In Spreading Misinformation</h1>
-                <p>An in-depth exploration of emerging technologies and their impact on modern society. Discover how innovation continues to reshape our world and what it means for tomorrow.</p>
-                <a href="#intro" class="hero-cta">Start Reading</a>
+                <h3 style="color: white">Should we be worried about malicious actors using AI to spread misinformation online?</h3>
             </div>
         </div>
     </section>
+            <section id="issue">
+                <div class="card">
+                    <h2>The Ethical Issue At Play</h2>
+                    <p>
+                       Every day millions of people use social media to connect with friends, learn about current events, discuss ideas with others, etc.
+                       Social media in all of its various forms has become a core part of our modern life and a key influence in our perception of the world around us.
+                       For example, before you decide to watch a new movie, you might search for reviews online to determine how others feel about it.
+                       Or before you purchase a new video game, you look up a quick review on YouTube to see what rating your favorite reviewer gave it.
+                       Some people might get the current news by scrolling the news tab of Reddit, looking through the comments to see other's thoughts about current events.
+                    </p>
+                    <p>
+                        However, our increased interaction and reliance on social media for our perceptions and interests has made it a prime target for malicious
+                        actors. The act of spreading misinformation online has been a thing for almost as long as the internet has been around. Although recent
+                        technological developments have made the spreading of misinformation online easier and more insidious than ever<i>[2]</i>.
+                    </p>
 
-    <!-- Article Content -->
-    <article class="article">
-        <div class="container">
-            <div class="article-meta">
-                <div class="article-meta-item">
-                    <span>Published:</span>
-                    <time>May 1, 2025</time>
+                    <blockquote>
+                        <p>Don't believe everything you read online.</p>
+                    </blockquote>
+
+                    <p>
+                        AI misinformation is already being used to manipulate important events such as elections. Recently, AI generated images of Taylor Swift
+                        endorsing the MAGA movement were spread around and even endorsed by Donald Trump himself<i>[5]</i>.
+                    </p>
+                    <img style="text-align: center;"src="/static/img/swift.png" alt="Screenshot of Donald Trump sharing AI generated images of Taylor Swift endorsement">
+                    <p>
+                        While it may seem comical to think that Taylor Swift's fake endorsement would have a significant effect on the results of a presidential election,
+                        even slight shifts in public perception can have a huge effect on how people think about something. An undecided voter who happens to be a big fan
+                        of Taylor Swift might have been convinced to vote one way or another based on this false endorsement.
+                    </p>
+                </section>
+                <!-- <section>
+                    <div class="card">
+                        <h2>AI is Already Being Used for Misinformation</h2>
+                    </div>
+                </section> -->
+                <section>
+                    <div class="card">
+                    <h2>Example of Generative AI for Misinformation</h2>
+                    <p>
+                        Generative AI technology, particularly for text & image generation, has rapidly evolved within the past few years<i>[4]</i>. In the past, someone
+                        wanting to spread a convincing fake photo of someone online would have to painstakingly photoshop the image to make it even slightly believable.
+                        These days, there are many websites and services that offer decently convincing AI image generation for free or minimal cost. And people who are willing
+                        to get a bit more technical can use their personal computers to run local image generation models to generate images with less restrictions than what
+                        online services will usually offer.
+                    </p>
+                    <h1>
+                        The following images are some examples of harmful AI generated images that I easily generated using a local image generating software called
+                        Fooocus<i>[3]</i>. 
+                    </h1>
+                    <div class="gallery">
+                        <div class="gallery-item">
+                            <img src="/static/img/trump_dirt.png" alt="AI generated image of Donald Trump eating dirt">
+                            <div class="gallery-caption">AI generated image of Donald Trump eating dirt</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/static/img/bernie_communism.png" alt="AI generated image of Bernie Sanders supporting communism">
+                            <div class="gallery-caption">AI generated image of Bernie Sanders with China's flag</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/static/img/mario_gun.png" alt="AI generated image of Super Mario holding a gun">
+                            <div class="gallery-caption">AI generated image of Mario holding a weapon</div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/static/img/elon_clown.png" alt="AI generated image of Elon Musk playing chess with a clown">
+                            <div class="gallery-caption">AI generated image of Elon Musk playing chess with a clown</div>
+                        </div>
+                    </div>
+                    <p>
+                        Similarly, LLMs (large language models) have rapidly increased in popularity and capabilities in recently. LLMS like OpenAI's ChatGPT, Google's Gemini,
+                        and Anthropic's Claude have attracted millions of users in just a few years. A key strength of LLMs is their ability to respond directly to a user's input
+                        in a human-like way. ChatGPT has already passed the Turing Test, indicating that it is capable of fooling people into believing that the text it produces
+                        was written by a human. All it takes for a LLM to become a powerful tool of misinformation is to have it pretend that it is a real person, tell it to spread Some
+                        belief, give it access to a fake account, and have it create posts and respond to others.
+                    </p>
+                    <p>
+                        The ethical issue this creates is that AI tools can easily be misused to spread misinformation online. This misinformation will then be seen by others and
+                        if they do not fact check it, they will likely spread it themselves via a reblog, retweet, like, etc. This has a snowball effect that can cause one piece of
+                        misinformation to have a wide reaching influence that can be used to sway beliefs for important things like elections. Furthermore, misinformation can reinforce
+                        echo chambers and make it more difficult to break people out of them.
+                    </p>
+                    <p>
+                        Virtue ethicists will agree that AI misinformation is unethical, as it does not uphold the virtues of honesty and integrity. Someone
+                        who is intentionally creating and spreading misinformation is not acting in a virtuous way, they are being deceitful and trying to
+                        manipulate others.
+                    </p>
+                    <p>
+                        Additionally, AI misinformation is unacceptable by Deontologists as well. Truth and honesty is a core moral principle in Deontology
+                        and AI misinformation consists of lies designed to deceive and mislead, violating that principle. Additionally, Liberals would determine
+                        that misinformation is unethical as well, due to the fact that by trying to wrongfully influence people into believing falsehoods, these
+                        AI models are violating people's right to make informed decisions. 
+                    </p>
+                    <p>
+                        We need effective and scalable solutions to detect and stop the spread of AI generated misinformation<i>[6]</i>.
+                    </p>
                 </div>
-                <div class="article-meta-item">
-                    <span>Reading time:</span>
-                    <span>8 min</span>
+            </section>
+
+            <section id="solution">
+                <div class="card">
+                    <h2>Solution</h2>
+                    <p>Some believe that restricting AI software would be an effective solution to this problem. If no one has access to the software
+                        to create this misinformation, then AI misinformation will not be spread. However, I believe that this is a naive approach that
+                        is not sustainable and will restrict innovation. 
+                    </p>
+                    <p>
+                        AI models are just implementations of algorithms and data analysis techniques. Making AI tools illegal would be like trying to make
+                        calculus illegal because derivatives can play a role in nuclear weapons development. There are many legitimate and useful applications for
+                        AI technologies in places such as the medical industry<i>[6]</i>.
+                    </p>
+                    <p>
+                        Rather than trying to get rid of AI altogether, we should strive to find methods to limit and detect the harmful applications of AI.
+                        An approach that many companies are taking today is using AI to find AI generated content. While this method works, it is prone to label things
+                        incorrectly and can cause legitimate content to be taken down. Additionally, there is an arms-race between AI-detection models and AI-generative models,
+                        where new generative models will learn to evade detection models, then new detection models will learn to detect the new generated content and so on.
+                    </p>
+                    <p>
+                        I believe the best approach to discourage the use of generative AI for spreading misinformation online would be a combination of detection
+                        and accountability. We can't truly stop bad actors from using this technology for nefarious purposes, but we can limit its spread and hold the
+                        appropriate parties responsible. To do this, we need clear regulations on what is defined as responsible and irresponsible use of generative AI,
+                        especially in domains like politics and medicine. We also need appropriate legal penalities for those who ignore those regulations and attempt to spread misinformation
+                        with AI content. We also need efficient and effective detection methods to find the stop the spread of the misinformation before it impacts a large
+                        population.
+                    </p>
+                </div>
+            </section>
+
+            <section id="objections">
+                <div class="card">
+                    <h2>Objections</h2>
+                    <blockquote>
+                        <p>
+                            1. There are already measures in place to detect and stop the spread of misinformation online, such as X's Community Notes.
+                            Therefore, AI generated misinformation will quickly be flagged and taken down before it spreads too far.
+                        </p>
+                    </blockquote>
+                    <blockquote>
+                        <p>
+                            2. AI generated content is not convincing enough to be believable. Once you look at the finer details it becomes obvious
+                            that it was generated by AI. Therefore, AI generated misinformation won't be spread very far because people will immediately
+                            dismiss it as fake.
+                        </p>
+                    </blockquote>
                 </div>
             </div>
-
-            <!-- Introduction -->
-            <section id="intro">
-                <div class="card">
-                    <h2>Introduction</h2>
-                    <p>The digital landscape has undergone a profound transformation in recent years, fundamentally altering how we interact with technology and with each other. This shift represents more than just incremental improvements in computing power—it signifies a radical reimagining of the relationship between humans and machines.</p>
-                    <p>The convergence of artificial intelligence, immersive technologies, and ubiquitous connectivity has created new paradigms that challenge our traditional understanding of digital experiences.</p>
-                </div>
-
-                <div class="animated-border">
-                    <h3>The Evolution of Digital Interfaces</h3>
-                    <p>From command-line interfaces to graphical user interfaces, and now to voice, gesture, and neural interfaces—the way we communicate with machines continues to become more intuitive and natural. This evolution isn't merely about convenience; it reflects a deeper understanding of human cognition and behavior.</p>
-                    <p>The most significant innovations in this space have been those that effectively disappear into the background, augmenting human capabilities without requiring conscious attention.</p>
-                </div>
-
-                <div class="gallery">
-                    <div class="gallery-item large">
-                        <img src="/api/placeholder/900/500" alt="Futuristic digital interface">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/api/placeholder/600/400" alt="AR visualization">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/api/placeholder/600/400" alt="Neural interface concept">
-                    </div>
-                </div>
-
-                <blockquote>
-                    <p>The most profound technologies are those that disappear. They weave themselves into the fabric of everyday life until they are indistinguishable from it.</p>
-                    <cite>— Mark Weiser, Chief Scientist at Xerox PARC</cite>
-                </blockquote>
             </section>
 
-            <!-- Key Analysis Section -->
-            <section id="analysis">
+            <section id="responses">
                 <div class="card">
-                    <h2>Analysis: The Four Pillars of Next-Generation Experiences</h2>
-                    <p>Our research identifies four fundamental pillars that will define the next generation of digital experiences. These pillars represent the convergence of multiple technologies and human-centered design principles.</p>
+                    <h2>Responses</h2>
+                    <h4>Response 1 (Utilitarianism)</h4>
+                    <p>
+                        While community notes is useful in labeling posts that spread misinformation, it does not scale well. The reason why generative AI is
+                        so effective at spreading misinformation is that it is completely autonomous. Thousands of bot accounts can be created in seconds, each
+                        completely independent from human intervention and dedicated to misleading others. On the other hand, community notes relies on human volunteers to review
+                        and fact-check posts for misinformation. As a result, while it might be accurate in detecting misinformation in posts that are flagged, community notes
+                        simply does not have enough resources to check every post for misinformation. Additionally, the program is volunteer based, meaning that a sophisticated
+                        adversary could infiltrate it and attempt to prevent certain posts from being flagged as misinformation.
+                    </p>
+                    <p>
+                        Under Utilitarianism, we need more effective solutions than what the objection proposes due to the fact that the current methods in place
+                        cannot scale well and will not catch every instance of misinformation, leading to net harm.
+                    </p>
+                    <h4>Response 2 (Virtue Ethics)</h4>
+                    <p>
+                        AI generated content often does feel "off" and contains mistakes or patterns that can indicate that it was created by AI, an infamous example
+                        being that AI image generators often struggle with hands and fingers. However, relying on these mistakes to identify AI content is short-sighted
+                        as AI models are continuously improving and becoming more sophisticated every day. It's possible that AI generated images will soon be 
+                        almost indistinguishable from real photos, meaning that it will be unviable to rely on just looking at the content alone<i>[4]</i>. 
+                    </p>
+                    <p>
+                        Furthermore, not everyone knows what an AI image looks like, or even that AI images exist. When scrolling social media, a decent amount people aren't going
+                        to heavily scrutinize the content that they see. They will just look at it for a few seconds, and if they agree they might like, retweet, etc. and move on.
+                        Therefore, it is not wise to assume that people will determine that AI content is fake and dismiss it on their own<i>[1]</i>.
+                    </p>
+                    <p>
+                        Virtue Ethics tells us that a virtuous society would not leave vulnerable individuals to just be manipulated by misinformation. Instead,
+                        we should act with benevolence and raise our awareness and vigilance to protect those vulnerable groups who are targets of misinformation.
+                    </p>
                 </div>
-                
-                <div class="highlight-box">
-                    <h3>1. Contextual Intelligence</h3>
-                    <p>Future systems will understand not just what users are doing, but why they're doing it. This contextual awareness allows for proactive assistance that anticipates needs rather than simply responding to explicit commands.</p>
-                    <p>The combination of sensors, data analysis, and machine learning enables unprecedented levels of personalization without requiring constant user input.</p>
-                </div>
-
-                <div class="highlight-box">
-                    <h3>2. Seamless Integration</h3>
-                    <p>The boundaries between devices, platforms, and physical spaces are dissolving. Tomorrow's experiences will flow naturally across modalities, adapting to the user's context while maintaining continuity.</p>
-                    <p>This requires not just technical interoperability but thoughtful design that maintains consistent mental models across diverse interfaces.</p>
-                </div>
-
-                <pre><code>// Example of adaptive interface code
-const AdaptiveInterface = {
-  detectContext() {
-    const environment = this.sensorData.getEnvironment();
-    const userState = this.userModel.getCurrentState();
-    return { environment, userState };
-  },
-  
-  renderOptimalInterface({ environment, userState }) {
-    if (environment.noise > THRESHOLD.LOUD && userState.attention < THRESHOLD.FOCUSED) {
-      return this.interfaces.visual.highContrast();
-    } else if (environment.privacy < THRESHOLD.SECURE) {
-      return this.interfaces.minimal.privateMode();
-    } else {
-      return this.interfaces.standard.withCustomizations(userState.preferences);
-    }
-  }
-};</code></pre>
-
-                <div class="highlight-box">
-                    <h3>3. Ethical Intelligence</h3>
-                    <p>As systems become more autonomous and integrated into sensitive aspects of our lives, embedded ethical frameworks become essential. This goes beyond privacy to include considerations of equity, transparency, and human agency.</p>
-                    <p>The most successful platforms will be those that build trust through responsible data practices and clear communication of their capabilities and limitations.</p>
-                </div>
-
-                <div class="highlight-box">
-                    <h3>4. Collaborative Creation</h3>
-                    <p>The line between creators and consumers is blurring. Next-generation platforms will emphasize co-creation, where AI and humans work together, each contributing their unique strengths to outcomes neither could achieve alone.</p>
-                    <p>This symbiotic relationship maximizes human creativity while leveraging computational power for tasks that machines excel at.</p>
-                </div>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Technology</th>
-                            <th>Current State</th>
-                            <th>Future Potential</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>AR/VR</td>
-                            <td>Specialized use cases</td>
-                            <td>Ubiquitous spatial computing</td>
-                        </tr>
-                        <tr>
-                            <td>Natural Language AI</td>
-                            <td>Competent assistants</td>
-                            <td>Collaborative intelligence</td>
-                        </tr>
-                        <tr>
-                            <td>Neural Interfaces</td>
-                            <td>Medical applications</td>
-                            <td>Direct intention capture</td>
-                        </tr>
-                        <tr>
-                            <td>Ambient Computing</td>
-                            <td>Smart homes and spaces</td>
-                            <td>Responsive environments</td>
-                        </tr>
-                    </tbody>
-                </table>
             </section>
 
-            <!-- Conclusion Section -->
-            <section id="conclusion">
+            <!-- <section id="conclusion">
                 <div class="card">
-                    <h2>Conclusion: Embracing the Human-Centered Future</h2>
-                    <p>The future of digital experiences is not primarily about technology—it's about human potential. The most transformative innovations will be those that enhance our uniquely human capacities: creativity, empathy, and collective problem-solving.</p>
-                    <p>As we move forward, the distinction between "digital" and "physical" experiences will continue to blur. What will matter is not which technologies we use, but how well they serve human needs and values.</p>
-                    <p>The organizations that thrive in this new landscape will be those that successfully balance technological capabilities with deep insights into human psychology and social dynamics.</p>
-                </div>
+                    <h2>Conclusion</h2>
+                    <p>TODO</p>
+                </div> -->
 
-                <div class="animated-border">
-                    <h3>Key Takeaways</h3>
-                    <p>The next generation of digital experiences will be characterized by:</p>
-                    <ul>
-                        <li>Proactive systems that anticipate needs rather than just responding to them</li>
-                        <li>Seamless integration across devices, environments, and modalities</li>
-                        <li>Embedded ethical frameworks that prioritize human agency and well-being</li>
-                        <li>Collaborative creation between humans and machines</li>
-                        <li>Personalization that respects privacy and individual autonomy</li>
-                    </ul>
-                </div>
-
-                <div class="gallery">
-                    <div class="gallery-item large">
-                        <img src="/api/placeholder/900/500" alt="Future technology concept">
+                <div class="card">
+                    <h2>Works Cited</h2>
+                    <div class="citations">
+                        <ul>
+                            <li>1. D. Barman and O. Colan, "Does Explanation Matter? An Exploratory Study on the Effects of Covid–19 Misinformation Warning Flags on Social Media," 2023 10th International Conference on Behavioural and Social Computing (BESC), Larnaca, Cyprus, 2023, pp. 1-7, doi: 10.1109/BESC59560.2023.10386371.</li>
+                            <li>2. Karaş, Zeynep. “Effects of AI-Generated Misinformation and Disinformation on the Economy”. Duzce University Journal of Science and Technology, vol. 12, no. 4, 2024, pp. 2349-60, doi:10.29130/dubited.1537268.</li>
+                            <li>3. Lllyasviel. (n.d.). GitHub - lllyasviel/Fooocus: Focus on prompting and generating. GitHub. https://github.com/lllyasviel/Fooocus</li>
+                            <li>4. M. R. Shoaib, Z. Wang, M. T. Ahvanooey and J. Zhao, "Deepfakes, Misinformation, and Disinformation in the Era of Frontier AI, Generative AI, and Large AI Models," 2023 International Conference on Computer and Applications (ICCA), Cairo, Egypt, 2023, pp. 1-7, doi: 10.1109/ICCA59364.2023.10401723,</li>
+                            <li>5. Tarrant, Rhona. “Trump Shares Fake “Swifties for Trump” Images.” Cbsnews.com, CBS News, 19 Aug. 2024, www.cbsnews.com/news/trump-shares-fake-swifties-for-trump-images/</li>
+                            <li>6. Tomlinson, B., Patterson, D. J., & Torrance, A. W. (2023). Turning Fake Data into Fake News: The AI Training Set as a Trojan Horse of Misinformation. San Diego Law Review, 60(4), 641–669.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div>
-                    <a href="#" class="btn-neon">Download Full Report</a>
-                    <a href="#" class="btn-neon">Share Insights</a>
-                </div>
             </section>
         </div>
+
     </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <div class="footer-logo">Dark Article</div>
-                    <p>Exploring cutting-edge ideas and technologies that are shaping our digital future.</p>
-                </div>
-                <div>
-                    <h4 class="footer-links-title">Sections</h4>
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#intro">Introduction</a></li>
-                        <li class="footer-link"><a href="#analysis">Analysis</a></li>
-                        <li class="footer-link"><a href="#conclusion">Conclusion</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="footer-links-title">Resources</h4>
-                    <ul class="footer-links">
-                        <li class="footer-link"><a href="#">Related Articles</a></li>
-                        <li class="footer-link"><a href="#">Research Papers</a></li>
-                        <li class="footer-link"><a href="#">Case Studies</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2025 Virtual Presentation Design</p>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
